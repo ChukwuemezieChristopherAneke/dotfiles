@@ -1,428 +1,3 @@
-cd -
-ls
-mkdir packages
-ls
-cd packages
-pwd
-man mv
-mv packages .packages
-ls
-cd ..
-cd -
-ls -a
-cd ..
-ls
-mv packages .packages
-ls
-ls -a
-ls
-ls -a
-cd .packages
-pwd
-fpm -s dir -t rpm -n girara -v 0.3.0 -C /tmp/staging_girara -d "meson >= 0.43" -d "glib2 >= 2.50" -d "gtk3 >= 3.20" -d "intltool" -d "libnotify" -d "json-c" --description "$(printf "Girara is a library that implements a user interface that focuses on simplicity\nand minimalism.")" --rpm-summary "Simple user interface library" --url "https://pwmt.org/projects/girara/" --directories=/usr/local/include/girara
-ls
-rpm -qip girara-0.3.0-1.x86_64.rpm
-rpm -qRp girara-0.3.0-1.x86_64.rpm 
-su -c 'rpm -ivh girara-0.3.0-1.x86_64.rpm'
-pwd
-ls
-cd
-ls /usr/local/bin | less
-ls -a | grep zath
-mkdir -p zathura/src zathura/packages
-ls -a | grep zath
-cd zathura
-ls
-git clone https://git.pwmt.org/pwmt/zathura.git src
-ls
-cd src
-git branch | less
-git branch
-git branch -a | less
-git branch -a
-ls
-git checkout --track -b develop origin/develop
-ls
-less README
-mkdir build
-ls
-meson build 
-ls
-ls build
-tree -L 4 build | less
-less build/meson-logs/meson-log.txt
-man tail
-less build/meson-logs/meson-log.txt
-man tail
-tail -n +22 build/meson-logs/meson-log.txt
-less build/meson-logs/meson-log.txt
-ls
-rm -ri build
-rm -rf build
-ls
-env | grep -i pkg
-echo $PKG_CONFIG_PATH
-ls
-mkdir build
-ls
-export PKG_CONFIG_PATH=/usr/local/lib64/pkgconfig/
-env | grep -i pkg
-echo $PKG_CONFIG_PATH
-ls
-meson build 
-less build/meson-logs/meson-log.txt
-tail -n +137 build/meson-logs/meson-log.txt
-ls
-rm -ri build 
-rm -rf build 
-ls
-su -c 'dnf install python2-sphinx' 
-env | grep -i pkg
-echo $PKG_CONFIG_PATH
-ls
-mkdir build
-ls
-pwd
-meson build
-ls
-ls build
-ls
-rm -ri build 
-rm -rf build 
-ls
-pwd
-su -c 'dnf install python2-breathe'
-ls
-mkdir build
-ls
-ls build
-rm -ri build
-ls
-mkdir build
-ls
-meson build 
-ls
-tree -L 4 build | less
-tree -L 8 build | less
-less build/meson-logs/meson-log.txt
-ls build
-ls
-rm -ri build
-rm -rf build
-ls
-mkdir build
-ls
-env | grep -i librar
-export LIBRARY_PATH=/usr/local/texlive/2018/bin/x86_64-linux/
-env | grep -i lib
-env | grep -i library
-ls
-ls build
-ls -a build
-echo $LIBRARY_PATH
-ls
-ls -a build
-meson build
-ls
-env | grep -i library
-echo $LIBRARY_PATH
-unset LIBRARY_PATH
-env | grep -i library
-echo $LIBRARY_PATH
-ls
-ls build
-tree -L 4 build | less
-less build/meson-logs/meson-log.txt
-env | grep -i library
-echo $LIBRARY_PATH
-ls
-ls build
-ls
-export LIBRARY_PATH=/usr/lib64/
-ls
-ls build
-ls
-rm -ri build
-rm -rf build
-ls
-mkdir build
-ls
-env | grep -i library
-echo $LIBRARY_PATH
-ls
-ls build
-meson build
-ls
-less build/meson-logs/meson-log.txt
-cat build/meson-logs/meson-log.txt > /tmp/new_file
-ls /tmp | grep new
-ls
-ls build
-less build/meson-logs/meson-log.txt
-ls
-rm -ri build
-rm -rf build
-ls
-env | grep library
-man env
-env | grep -i library
-echo $LIBRARY_PATH
-unset LIBRARY_PATH
-env | grep -i library
-echo $LIBRARY_PATH
-ls
-mkdir build
-ls
-meson build
-ls
-rm -ri build
-rm -rf build
-ls
-su -c 'dnf install xdotool'
-ls
-env | grep -i library
-echo $LIBRARY_PATH
-mkdir build
-ls
-meson build
-ls
-ls build 
-less build/meson-logs/meson-log.txt
-ls
-ls build
-rm -ri build
-rm -rf build
-ls
-su -c 'dnf install texlive-synctex'
-ls
-env | grep -i library
-echo $LIBRARY_PATH
-ls
-mkdir build
-ls
-meson build
-ls
-su -c 'dnf install texlive-lib'
-su -c 'dnf install texlive-synctex-bin'
-pwd
-ls
-ls build
-rm -ri build
-rm -rf build
-ls
-pwd
-cd ..
-ls
-ls -a
-ls packages
-ls -a packages
-pwd
-cd
-pwd
-ls | grep zathura
-ls | grep ZATHURA
-ls | grep Zathura
-ls | grep zathura
-ls zathura
-ls | grep zathura
-tree -L 4 zathura | less
-tree -L 2 zathura | less
-tree -L 2 zathura
-ls | grep zathura
-rm -ri zathura
-rm -rf zathura
-ls | grep zathura
-ls | grep -i zathura
-ls | grep zathura
-ls
-ls | grep zathura
-man xdg-open
-man mimeopen
-cd cryptdrive
-pwd
-ls
-cd 'Fedora Linux'
-pwd
-ls | less
-ls "pdf transfer" | less
-tree -L 2 pdf transfer | less
-tree -L 2 pdf transfer
-tree -L 2 "pdf transfer" | less
-cd
-cd tmp
-ls | grep -i zath
-man locate
-cd
-pidof dnf
-echo &
-echo a
-echo &
-echo "&"
-echo '&'
-echo \&
-echo \
-pidof rpm
-man ps
-ps ax | grep -i rpm
-ps -ef | grep -i rpm
-echo &
-echo "&"
-echo (
-echo "("
-curl http://www.geogebra.org/ | less
-curl http://www.geogebra.net | less
-curl http://www.geogebra.net/linux/ | less
-curl http://www.geogebra.org/download/rpm.php?arch=amd64&ver=6 | less
-curl -L http://www.geogebra.org/download/rpm.php?arch=amd64&ver=6 | less
-man curl
-curl -L http://www.geogebra.org/download/rpm.php?arch=amd64&ver=6
-echo ?
-echo =
-man which
-which virtualenvwrapper.sh
-ls -a | grep bash
-xdg-open .bashrc
-ls -a | grep virtual
-tree -L 10 .virtualenvs | less
-source ~/.bashrc
-tree -L 10 .virtualenvs | less
-echo $WORKON_HOME
-echo $PROJECT_HOME
-echo $VIRTUALENVWRAPPER_PYTHON
-echo $VIRTUALENVWRAPPER_VIRTUALENV
-echo $VIRTUALENVWRAPPER_VIRTUALENV_ARGS
-ls -a | grep -iE 'virtual|Dev'
-tree -L 10 .virtualenvs | less
-pwd
-mkvirtualenv my-new-project
-deactivate
-workon
-workon my-new-project
-deactivate
-tree -L 10 .virtualenvs | less
-tree -L 16 .virtualenvs | less
-tree -L 20 .virtualenvs | less
-virtualenv -p $(which python) blog_virtualenv
-workon
-tree -L 4 blog_virtualenv | less
-. blog_virtualenv/bin/activate
-deactivate
-pip3 list | less
-workon
-which python
-which pip
-which pip3
-workon
-workon my-new-project
-which python
-which pip
-tree -L 4 ~/.virtualenvs/my-new-project/bin | less
-which pip3
-deactivate
-pip --version
-pip3 --version
-ls /usr/local/lib/python3.6/site-packages | less
-workon
-workon my-new-project
-which pip
-which pip3
-pip --version
-pip3 --version
-deactivate
-man python
-python --version
-python3 --version
-which pip2
-pip2 --version
-pip --version
-pip3 --version
-echo $WORKON_HOME
-mkvirtualenv intel
-workon
-pip list | less
-man pip
-pip help list | less
-pip help freeze | less
-pip list | less
-pip list
-pip help freeze | less
-pip freeze | less
-pip freeze
-pip help freeze | less
-pip freeze
-pip install intel-numpy intel-scipy intel-scikit-learn pydaal tbb4py 
-pip help list | less
-pip list | less
-pip list
-pip help freeze | less
-pip freeze
-pip help list | less
-pip hep list | less
-pip help list | less
-pip list -o | less
-pip list -o
-pip lis -u | less
-pip list -u | less
-pip help install | less
-pip help list | less
-pip list -u | less
-pip list -u
-pip list | less
-pip help install | less
-pip list -o   
-pip help show | less
-which pip
-which pip3
-tree -L ~/.virtualenvs/intel/bin | less
-tree -L 3 ~/.virtualenvs/intel/bin | less
-pip --version
-pip3 --version
-pip install jupyter
-pip list | less
-which python
-tree -L 4 ~/.virtualenvs/intel/bin | less
-python -m ipykernel install --user --name intel --display-name "Python 3 (intel)"
-jupyter notebook
-deactivate
-workon
-workon intel
-pip list | less
-deactivate
-workon
-workon intel
-deactivate
-workon
-workon intel
-pip list | less
-jupyter notebook
-deactivate
-history | less
-pwd
-su -c 'dnf history list | less' 
-su -
-su -c 'dnf history list | less'
-su -c 'dnf history info 67 | less'
-su -c 'dnf history list | less'
-su -c 'dnf history info 66 | less'
-su -c 'dnf history list | less'
-su -c 'dnf history info 65 | less'
-su -c 'dnf history list | less'
-dnf search girara | less
-dnf info girara-devel
-dnf search girara | less
-dnf info girara
-man rpm
-su -c 'rpm -e girara'
-ls /var/cache/dnf | less
-ls /var/cache/PackageKit/28/metadata/updates/packages | less
-du -sh /var/cache/PackageKit/28/metadata/updates/packages
-du -sh /var/cache/PackageKit/28/metadata/updates
-su -c 'du -sh /var/cache/PackageKit/28/metadata/updates'
-ls /var/cache/PackageKit/28/metadata/updates | less
-ls /var/cache/PackageKit/28/metadata/updates/packages | less
-ls /var/cache/PackageKit | less
-su -c 'dnf history list | less'
-su -c 'dnf history info 62 | less'
 su -c 'dnf history list | less'
 su -c 'dnf history rollback 61'
 su -c 'dnf history list | less'
@@ -998,3 +573,428 @@ ls tmp | less
 ls | less
 ls -a | less
 man vi
+cd /
+su -c 'find -iname "*dir_colors*" | less'
+su -c 'find -iname "*dir_colors*"'
+less ./etc/DIR_COLORS
+which bash
+which sh
+man dircolors
+which ls
+man whereis
+whereis ls
+ls / | less
+cd /bin
+ls | less
+pwd
+man file
+file ls
+man dircolors
+pwd
+cd ~
+pwd
+ls -a | grep bas
+less .bash_aliases
+ls -a | grep loc
+cd local
+ls | less
+cd bin
+ls
+ls -l
+cd
+ls | less
+man vi
+vi --version
+dnf info vim | less
+dnf info vim-minimal | less
+dnf info vim-minimal
+dnf search vim | less
+dnf info vim-enhanced
+su -c 'dnf install vim-enhanced'
+man dirname
+man rsync
+tree -L 6 .mozilla | less
+man rsync
+mkdir /tmp/bash_files
+ls /tmp | grep bas
+tree -L 6 /tmp/bash_files
+man rsync
+tree -aL 6 /tmp/bash_files
+mkdir /tmp/bash_files2
+tree -aL 6 /tmp/bash_files2
+mkdir /tmp/bash_files_cp
+tree -aL 6 /tmp/bash_files_cp
+man rsync
+dnf search stow | less
+dnf info stow
+su -c 'dnf install stow'
+cd
+dnf search stow | less
+dnf info stow
+su -c 'dnf install stow'
+man rsyn
+man rsync
+ls -a | grep dot
+ls /tmp | less
+mkdir /tmp/kitty_bak
+ls /tmp | grep kit
+tree -L 4 /tmp/kitty_bak | less
+tree -L 4 /tmp/kitty_bak
+man rsync
+man stow
+cd /tmp
+ls | less
+ls | grep rsync
+cd rsync_test
+git help init
+ls ~
+pwd
+cd
+ls | grep kitt
+cd kitty
+ls | less
+pwd
+ls /home/DeepLearning/kitty | less
+ls /home/DeepLearning/kitty/src | less
+tree -L 4 /home/DeepLearning/kitty/src | less
+ls /home/DeepLearning/kitty/src | less
+less /home/DeepLearning/kitty/src/kitty/conf/utils.py
+tree -L 4 /home/DeepLearning/kitty/src | less
+less /home/DeepLearning/kitty/src/kitty/utils.py | less
+pwd
+cd
+dnf search neovim | less
+dnf info neovim
+dnf search vim | less
+echo $EDITOR
+ls | less
+ls -a | less
+tree -aL 4 .config | less
+tree -aL 6 .config | less
+ls -a
+ls
+ls -a
+cd .config
+ls | less
+man realpath
+ls | less
+ls | grep ki
+cd kitty
+ls | less
+ls
+man realpath
+realpath kitty.conf
+cd ..
+ls | less
+cd
+man realpath
+man ls
+man rysnc
+man rsync
+ma
+man rsync
+pwd
+ls | less
+mkdir /tmp/rsync_test
+ls /tmp | less
+tree -L 4 /tmp/rsync_test | less
+tree -L 4 /tmp/rsync_test
+ls | less
+ls | grep restic
+man rsync
+pwd
+ls | less
+realpath restic-demo
+rsync /home/./DeepLearning/restic-demo /tmp/rsync_test
+tree -L 4 /tmp/rsync_test | less
+rsync --version | less
+ls | less
+tree -L 2 restic-demo | less
+tree -L 2 restic-dot-test-folder-restore | less
+tree -L 2 restic-dot-test-folder-restore
+cd restic-dot-test-folder-restore/testdata
+realpath file2.raw
+cd
+rsync /home/DeepLearning/restic-dot-test-folder-restore/./testdata/file2.raw /tmp/rsync_test
+tree -L 4 /tmp/rsync_test | less
+rsync /home/DeepLearning/./restic-dot-test-folder-restore/testdata/file2.raw /tmp/rsync_test
+tree -L 4 /tmp/rsync_test | less
+man rsync
+tree -L 4 /tmp/rsync_test | less
+mkdir /tmp/rsync_test2
+ls /tmp | less
+ls /tmp | grep rsyn
+rsync restic-dot-test-folder-restore/./testdata/file2.raw /tmp/rsync_test2
+tree -L 4 /tmp/rsync_test2 | less
+mkdir /tmp/rsync_test3
+ls /tmp | grep rsync
+rsync --relative restic-dot-test-folder-restore/testdata/file2.raw /tmp/rsync_test3
+tree -L 4 /tmp/rsync_test3 | less
+tree -L 4 /tmp/rsync_test3
+mkdir /tmp/rsync_test4
+ls /tmp | grep rsync
+pwd
+rsync --relative /home/DeepLearning/restic-dot-test-folder-restore/testdata/file2.raw /tmp/rsync_test4
+tree -L 4 /tmp/rsync_test4 | less
+tree -L 4 /tmp/rsync_test4
+mkdir /tmp/rsync_test_5
+ls /tmp | grep rsync
+rsync --relative restic-dot-test-folder-restore/./testdata/file2.raw /tmp/rsync_test_5
+tree -L 5 /tmp/rsync_test_5 | less
+tree -L 5 /tmp/rsync_test4
+mkdir /tmp/rsync_test_6
+ls /tmp | grep rsync
+tree -L 5 /tmp/rsync_test_5
+rsync --relative --remove-source-files /tmp/rsync_test4/home/DeepLearning/restic-dot-test-folder-restore/testdata /tmp/rsync_test_6
+tree -L 4 /tmp/rsync_test_6 | less
+tree -L 4 /tmp/rsync_test_6
+rsync --relative --remove-source-files /tmp/rsync_test4/home/DeepLearning/restic-dot-test-folder-restore/testdata/file2.raw /tmp/rsync_test_6
+tree -L 4 /tmp/rsync_test_6 | less
+tree -L 6 /tmp/rsync_test_6 | less
+tree -L 10 /tmp/rsync_test_6 | less
+tree -L 10 /tmp/rsync_test4 | less
+tree -L 10 /tmp/rsync_test4
+ls | less
+ls -a | grep dot
+mkdir dotfiles
+ls -a | grep dot
+cd dotfiles
+ls -a | less
+ls -a
+mkdir bash kitty
+ls
+cd
+man cp
+cp .bash_aliases .bash_history .bash_logout .bashrc /tmp/bash_files
+tree -L 4 /tmp/bashfiles | less
+tree -L 4 /tmp/bash_files | less
+rsync .bash_aliases .bash_history .bash_logout .bashrc /tmp/bash_files
+tree -L 4 /tmp/bash_files | less
+rsync .bash_aliases .bash_history .bash_logout .bashrc /tmp/bash_files2
+cp .bash_aliases .bash_history .bash_logout .bashrc /tmp/bash_files_cp
+cd -
+ls | less
+ls
+cd
+rsync --remove-source-files .bash_aliases .bash_history .bash_logout .bashrc $HOME/dotfiles/bash
+ls | less
+ls
+ls -a | less
+ls -a
+cd -
+ls -a | grep dot
+cd dotfiles
+ls | less
+ls
+ls bash
+ls -a bash | less
+ls -a bash
+ls
+rsync /home/DeepLearning/.config/kitty/kitty.conf /tmp/kitty_bak/kitty.conf.bak
+rsync --relative --remove-source-files /home/DeepLearning/./.config/kitty/kitty.conf $HOME/dotfiles/kitty
+ls
+tree -aL 6 kitty | less
+tree -aL 6 kitty
+ls -a ~ | grep conf
+tree -L 6 ~/.config | less
+tree -L 6 ~/.config/kitty
+ls
+stow bash
+ls -a ~ | less
+ls -a ~
+ls
+stow kitty
+tree -L 6 ~/.config/kitty | less
+tree -L 6 ~/.config/kitty
+tree -aL 1 ~ | less
+tree -aL 1 ~
+ls
+ls -a
+pwd
+ls -a
+git init
+ls -a
+git status
+git help diff
+git diff
+git help diff
+git diff --staged
+git branch
+git branch -a
+git log
+git branch
+git branch -a
+git status
+git add -A
+git status
+git branch
+git commit
+git log
+git log -p
+git status
+git branch
+git branch -a
+git log
+git help remote
+man grep
+grep -r gauss | less
+ls Downloads | grep gauss
+kitty icat Downloads/gauss_doodle.png
+ls Downloads | grep gauss
+kitty icat Downloads/gauss_doodle.png
+man cp
+ls -a | less
+ls | less
+tree -L 2 bin | less
+tree -aL 2 bin | less
+ls -a bin | less
+cd /
+su -c 'find -iname "*dircolors*" | less'
+less usr/bin/dircolors
+su -c 'find -iname "*dir_colors*" | less'
+su -c 'find -iname "*dir_colors*"'
+file /etc/DIR_COLORS
+less /etc/DIR_COLORS
+less /etc/DIR_COLORS.256color
+less /etc/DIR_COLORS.lightbgcolor
+man ls
+man exec
+ls | less
+cd
+ls -a | grep dir
+wget -O $HOME/.dircolors "https://raw.github.com/trapd00r/LS_COLORS/master/LS_COLORS" 
+ls -a | grep dir
+less .dircolors
+vi .dircolors
+ls -a | grep bin
+ls bin | less
+cd bin
+ls
+ls ~ | grep local
+tree -L 2 ~/local | less
+ls -l ~/local/bin
+tree -L 2 ~/local | less
+tree -L 2 ~/local
+pwd
+vi ls
+ls -l
+chmod 0774 ls
+ls -l
+ls
+cd
+ls | less
+less ls
+cd -
+less ls
+cd
+ls | less
+echo $LS_COLORS
+cd -
+ls -l
+less ls
+pwd
+echo $PATH
+pwd
+less ls
+ls / | less
+file /bin
+pwd
+ls -a ~ | grep bas
+ls -a ~ | grep prof
+less ~/.bashrc
+less ~/.profile
+pwd
+ls
+ls -l
+file ls
+man mv
+ls -a ~ | grep loc
+man realpath
+ls ~/local | less
+cd ~/local/bin
+ls | less
+ls
+ls -l
+pwd
+cd -
+ls -l
+pwd
+ls
+ls -l
+ls
+cd -
+pwd
+ls
+ls -l
+cd -
+pwd
+ls
+ls -l
+mv ls /home/DeepLearning/local/bin
+ls
+cd -
+ls
+ls -l
+cd
+ls | less
+cd -
+ls
+less ls
+ls
+ls -l
+echo $LS_COLORS
+man dircolors
+dircolors --print-database | less
+pwd
+less ls
+pwd
+ls
+ls -l
+echo $LS_COLORS
+ls --colors=auto
+ls --help | less
+man ls
+echo $LS_COLORS
+ls
+ls --colors
+ls -a ~ | grep bas
+less ~/.bashrc
+man source
+source ~/.bash_aliases
+ls
+ls -l
+echo $LS_COLORS
+echo $PATH
+ls
+ls -l
+ls -a ~ | grep dir
+less ~/.dircolors
+vi ~/.dircolors
+ls
+ls -l
+less ls
+ls ~ | less
+man type
+type ls
+ls
+\ls
+ls -l
+\ls -l
+man dir
+ls
+dir
+man dir
+dir -l
+ls
+less ls
+man bash
+ls -l
+ls
+bash
+ls
+ls -l
+bash
+ls ~ | less
+ls $HOME
+bash
+ls | less
