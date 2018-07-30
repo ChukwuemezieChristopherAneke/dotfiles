@@ -1,6 +1,6 @@
 ## $HOME/dotfiles
 
-This is my configuration for linux programs and software on fedora, including [bash][1] and [kitty][2] plus others. The configuration files are constantly being updated after installing new programs or modifying a pre-existing configuratio, and are tracked in the list below.
+This is my configuration for linux programs and software on fedora, including [bash][1] and [kitty][2] plus others. The configuration files are constantly being updated after installing new programs or modifying a pre-existing configuration, and are tracked in the list below.
 
 ## Current configuration files
 
