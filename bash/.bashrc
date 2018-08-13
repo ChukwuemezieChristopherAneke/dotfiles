@@ -17,3 +17,6 @@ fi
 
 # activate virtualenvwrapper shell functions
 source $HOME/.local/bin/virtualenvwrapper.sh
+
+# command to preserve bash history across all terminal windows and tabs, see Manual Page history(1)
+PROMPT_COMMAND="history -a; history -c; history -r; $PROMPT_COMMAND"
